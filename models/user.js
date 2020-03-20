@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose')
 
 //User schema
+//Passport-local-mongoose will keep your username unique
 const userSchema = new mongoose.Schema ({
     name: String,
     username: {
